@@ -11,7 +11,6 @@ describe("SmthService", function() {
     }]);
     msg = smthService.query();
     httpBackend.flush();
-    console.log(msg);
     expect(msg[0].msg).toEqual("smth")
   });
 });
