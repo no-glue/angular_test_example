@@ -13,11 +13,6 @@ gulp.task("dev", function() {
       "./public/javascripts/services/*.js", 
       "./public/javascripts/controllers/*.js"
     ])
-    .pipe(watch([
-      "./public/javascripts/app.js", 
-      "./public/javascripts/services/*.js", 
-      "./public/javascripts/controllers/*.js"
-     ]))
     .pipe(concat("app.js"))
     .pipe(gulp.dest("./public/javascripts/dev"));
 });
@@ -25,9 +20,9 @@ gulp.task("dev", function() {
 gulp.task("watch", function() {
   // watch for changes in js files
   return gulp.watch([
-      "./public/javascripts/app.js", 
-      "./public/javascripts/services/*.js", 
-      "./public/javascripts/controllers/*.js"
+      "public/javascripts/app.js", 
+      "public/javascripts/services/*.js", 
+      "public/javascripts/controllers/*.js"
     ], ["dev"]);
 });
 
