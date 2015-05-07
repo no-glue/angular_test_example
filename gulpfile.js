@@ -1,7 +1,8 @@
 var gulp = require("gulp"),
   concat = require("gulp-concat"),
   watch = require("gulp-watch"),
-  uglify = require("gulp-uglify");
+  uglify = require("gulp-uglify"),
+  lreload = require("gulp-livereload");
 
 gulp.task("default", function() {
   // do something default
@@ -15,7 +16,8 @@ gulp.task("dev", function() {
       "./public/javascripts/controllers/*.js"
     ])
     .pipe(concat("app.js"))
-    .pipe(gulp.dest("./public/javascripts/dev"));
+    .pipe(gulp.dest("./public/javascripts/dev"))
+    .pipe(lreload());
 });
 
 gulp.task("deploy", function() {
