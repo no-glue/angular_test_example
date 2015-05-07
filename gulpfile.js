@@ -7,7 +7,7 @@ gulp.task("default", function() {
 
 gulp.task("dev", function() {
   // compile js files for dev
-  return gulp.src(["./public/javascripts/app.js", "./public/javascripts/controllers/*.js"])
+  return gulp.src(["./public/javascripts/app.js", "./public/javascripts/services/*.js","./public/javascripts/controllers/*.js"])
     .pipe(concat("app.js"))
     .pipe(gulp.dest("./public/javascripts/dev"));
 });
