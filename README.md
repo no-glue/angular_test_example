@@ -9,4 +9,4 @@ angular example setup with bower (front end packages), karma (testing) and gulp 
 karma start
 
 ### build (front application)
-gulp dev or gulp watch
+gulp dev or gulp watch or gulp deploy
