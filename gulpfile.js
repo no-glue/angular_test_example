@@ -38,6 +38,6 @@ gulp.task("watch", function() {
       "public/javascripts/app.js", 
       "public/javascripts/services/*.js", 
       "public/javascripts/controllers/*.js"
-    ], ["dev", "deploy"]);
+    ], ["dev"]);
 });
 

@@ -1,7 +1,11 @@
 doctype html
-html
+html(ng-app="app")
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type="text/javascript", src="javascripts/components/angular/angular.js")
+    script(type="text/javascript", src="javascripts/components/angular-resource/angular-resource.js")
+    script(type="text/javascript", src="javascripts/components/angular-route/angular-route.js")
+    script(type="text/javascript", src="javascripts/dev/app.js")
   body
     block content
